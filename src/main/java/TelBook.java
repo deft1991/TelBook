@@ -2,10 +2,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created by пк on 04.09.2016.
+ * Created by deft on 04.09.2016.
  */
 public class TelBook {
-    public static HashMap<String, ArrayList> telB = new HashMap<String, ArrayList>();
+    public static HashMap<String, ArrayList<String>> telB = new HashMap<String, ArrayList<String>>();
 
     public static void main(String[] args) {
         addALL();
@@ -39,7 +39,7 @@ public class TelBook {
     }
 
     public static void getData(String name) {
-        if (name == null /*|| name.equals(null)*/) {
+        if (name == null) {
             System.out.println("не коректные данные");
             return;
         }
