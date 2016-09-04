@@ -47,8 +47,7 @@ public class TelBook {
             System.out.println("Такого имени нет в БД!");
             return;
         }
-        ArrayList<String> list = telB.get(name);
-        for (String s : list)
+        for (String s : telB.get(name))
             System.out.println(s);
         // если используем Java 8
         //telB.get(name).forEach(value -> System.out.println(value));
